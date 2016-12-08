@@ -214,9 +214,9 @@ class CPTP_Module_Permalink extends CPTP_Module {
 					$term_obj  = reset( $newTerms ); // 最初のOBjectのみを対象。
 					$term_slug = $term_obj->slug;
 
-					if ( isset( $term_obj->parent ) and 0 != $term_obj->parent ) {
-						$term_slug = CPTP_Util::get_taxonomy_parents_slug( $term_obj->parent, $taxonomy, '/', true ) . $term_slug;
-					}
+					// if ( isset( $term_obj->parent ) and 0 != $term_obj->parent ) {
+					// 	$term_slug = CPTP_Util::get_taxonomy_parents_slug( $term_obj->parent, $taxonomy, '/', true ) . $term_slug;
+					// }
 				}
 
 				if ( isset( $term_slug ) ) {
